@@ -94,6 +94,8 @@ Caso você tenha feito alterações no código e deseja compilar recomendamos o 
 
 ### Contribuindo
 
+Aceitamos dicas e alterações de código e documentação via [pull requests](https://github.com/mkautzmann/produtor-consumidor/pulls) ou abertura de [issues](https://github.com/mkautzmann/produtor-consumidor/issues/new).
+
 ## Autores
 
   - [Gustavo Wilrich](https://github.com/gustavo7w)
