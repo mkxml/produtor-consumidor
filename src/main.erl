@@ -119,13 +119,13 @@ start() ->
   start([],[]).
 
 start(_StartType, _StartArgs) ->
-  io:format("~ts~n", ["Iniciando o programa Produtor/Consumidor"]),
+  io:format("Iniciando o programa Produtor/Consumidor~n"),
   io:format("Setando o buffer incial vazio~n"),
   io:format("Criando Produtor e Consumidor~n"),
   Produtor = spawn(produtor, loop, [self(), ?MAX_TIMER_PRODUTOR]),
   Consumidor = spawn(consumidor, loop, [self(), ?MAX_TIMER_CONSUMIDOR]),
   BufferInicial = [],
-  io:format("~ts~n~n", ["Buffer esperando..."]),
+  io:format("Buffer esperando...~n~n"),
   %% Inicia todo o ciclo!
   Produtor ! {self(), acorda},
   %% Aqui a mágica acontece, a função a seguir escuta os eventos e controla todo o buffer
