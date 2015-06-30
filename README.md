@@ -86,7 +86,7 @@ Para executar o debugger você deve executar o programa de forma diferente. Siga
 
 ### Fazendo o build
 
-Caso você tenha feito alterações no código e deseja compilar recomendamos o [Rebar](), com ele instalado siga as instruções:
+Caso você tenha feito alterações no código e deseja compilar recomendamos o [Rebar](https://github.com/rebar/rebar), com ele instalado siga as instruções:
 
   1. Vá até o diretório raiz do seu clone;
   2. Execute `rebar compile`;
