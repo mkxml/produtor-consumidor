@@ -20,7 +20,7 @@ loop(Mestre, Timer) ->
       Mestre ! {self(), dormi},
       loop(Mestre, Timer);
     {Mestre, _} ->
-      %% Seta um timer randômico de até 5 segundos para simular a produção de conteúdo
+      %% Seta um timer randômico de até Timer segundos para simular a produção de conteúdo
       random:seed(now()),
       timer:sleep(round(timer:seconds(random:uniform(Timer)))),
       Valor = produzir(),

@@ -15,7 +15,7 @@ loop(Mestre, Timer) ->
       Mestre ! {self(), dormi},
       loop(Mestre, Timer);
     {Mestre, _} ->
-      %% Seta um timer randômico de até 5 segundos para simular o consumo de conteúdo
+      %% Seta um timer randômico de até Timer segundos para simular o consumo de conteúdo
       random:seed(now()),
       timer:sleep(round(timer:seconds(random:uniform(Timer)))),
       Mestre ! {self(), remove},
